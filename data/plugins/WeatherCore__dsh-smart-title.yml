@@ -1,0 +1,6 @@
+url: https://github.com/WeatherCore/dsh-smart-title   # 必须与仓库完全一致
+name: WeatherCore/dsh-smart-title
+category: sessions
+description:
+  en: Smart session titler that names the conversation after the first full turn completes, with an AI-regenerate and manual-rename button in the chat header.
+  zh: dsh 会话标题插件：等第一轮完整对话以任意原因结束（完成、中止、出错、封顶）后再总结标题，比只看首条提问更准；等待经快照、订阅、复查三步防竞态，瞬间结束的一轮也不漏。失败时提交本地化占位标题并记警告日志，配合聊天头部 ✎ 按钮一键重试，不再静默返回空标题；✎ 单击经显式刷新标记总结对话现状，Shift+单击手动改名，用户命名由服务钉住永不被自动覆盖。标题输入按路径配额做 UTF-8 字节安全截断，输出经首行提取与反引用正则剥壳净化；调度、改名钉住与审计复用官方 sessionTitle 服务与 session-title-llm 共享库，不重复造轮子
